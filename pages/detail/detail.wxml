@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view class='whole-wrap'>
+    <view class='title'>{{articleInfo.title}}</view>
+    <view class='source-date-readCount'>
+        <text class='source'>{{articleInfo.source}}</text>
+        <text class='date'>{{articleInfo.date}}</text>
+        <text class='readCount'>阅读  {{articleInfo.readCount}}</text>
+    </view>
+    <view class='content' wx:for="{{articleInfo.content}}">
+        <view wx:if="{{item.type === 'p'}}" class='p'>{{item.text}}</view>
+        <image wx:elif="{{item.type === 'image'}}" src='{{item.src}}' class='image'></image>
+        <view wx:else class='strong'>{{item.text}}</view>
+    </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<view class='type-list'>
+    <view class='type-item' wx:for="{{types}}" wx:key="abbreviation" bindtap='changeType' data-type='{{item.abbreviation}}'>{{item.name}}</view>
+</view>
+
+<view class='hot' data-id='{{articles[0].id}}' bindtap='toDetail'>
+    <image class='hot-image' src='{{articles[0].firstImage || defaultImage}} ' mode='aspectFill'>
+        <view class='top-right-text'>热门</view>
+        <view class='text-wrap'>
+            <text class='title'>{{articles[0].title}}</text>
+            <text class='source'>{{articles[0].source}}</text>
+            <text class='date'>{{articles[0].date}}</text>
+        </view>
+    </image>
+</view>
+
+<view wx:for="{{articles}}" wx:key="id" class='list-item' data-id='{{item.id}}' bindtap='toDetail'>
+    <view class='list-text-wrap'>
+        <view class='list-title'>{{item.title}}</view>
+        <text class='list-source'>{{item.source}}</text>
+        <text class='list-date'>{{item.date}}</text>
+    </view>
+    <view class='list-image-wrap'>
+        <image src='{{item.firstImage || defaultImage}}' class='list-image'  mode='aspectFill'></image>
+    </view>
+</view>

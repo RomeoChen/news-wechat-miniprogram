@@ -1,0 +1,93 @@
+/* pages/list/list.wxss */
+.type-list {
+    display: flex;
+    background-color: #0366d6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60rpx;
+    z-index: 10;
+}
+.type-item {
+    width: 110rpx;
+    text-align: center;
+    color: white;
+}
+
+.hot {
+    padding: 60rpx 0 0 0;
+    background-color: #eeeeee;
+}
+.hot-image::before {
+    content: '';
+    position: absolute;
+    background: black;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.hot-image {
+    position: relative;
+    margin: 50rpx;
+    width: 650rpx;
+    height: 400rpx;
+}
+.top-right-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    opacity: 0.7;
+    background-color: red;
+}
+.text-wrap {
+    position: absolute;
+    left: 30rpx;
+    bottom: 20rpx;
+    right: 50rpx;
+}
+.title {
+    color: white;
+    display: block;
+    word-wrap: break-word;
+    margin-bottom: 10rpx;
+}
+.source {
+    color: gray;
+    margin-right: 20rpx;
+}
+.date {
+    color: gray;
+}
+
+.list-item {
+    margin: 30rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+.list-item:last-child {
+    border-bottom: none;
+}
+.list-text-wrap {
+    width: 450rpx;
+    display: inline-block;
+}
+.list-title {
+    font-size: 30rpx;
+}
+.list-source {
+    font-size: 20rpx;
+    margin-right: 10rpx;
+}
+.list-date {
+    font-size: 20rpx;
+}
+.list-image-wrap {
+    margin-left: 20rpx;
+    display: inline-block;
+}
+.list-image {
+    width: 220rpx;
+    height: 120rpx;
+}

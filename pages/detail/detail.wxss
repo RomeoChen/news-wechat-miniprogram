@@ -1,0 +1,27 @@
+/* pages/detail/detail.wxss */
+.whole-wrap {
+    padding: 40rpx;
+}
+.title {
+    font-size: 50rpx;
+}
+.source-date-readCount {
+    font-size: 30rpx;
+    margin-top: 30rpx;
+    margin-bottom: 70rpx;
+    color: #747474;
+}
+.source {
+    margin-right: 50rpx;
+}
+.readCount {
+    float: right;
+}
+.content {
+    margin: 20rpx 0;
+    font-size: 30rpx;
+    line-height: 48rpx;
+}
+.strong {
+    font-weight: bold;
+}
